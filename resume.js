@@ -1,8 +1,5 @@
 $(document).ready(function(){
-	jQuery.validator.setDefaults({
-  debug: true,
-  success: "valid"
-});
+	
 var form = $( "#personal-detail");
 var form1= $( "#resume-detail");
 var form2= $( "#secondary-form");
