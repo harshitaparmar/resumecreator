@@ -1,0 +1,1181 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="resume.css">
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Creator</title>
+</head>
+<body>
+  <div class="container-fluid">
+     <div class="row mainRow">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="height:20%;background-color:#42A5F5">
+          <h2 style="color:white;font-size:2.5vmax">Online Resume Creator</h2>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row" id="front-page-form">
+        <div class="col-lg-6 col-sm-6 col-sm-6 col-xs-12">
+          <p style="font-size:2.5vmax;padding:15%">Make your professional Resume in <span style="color:#42A5F5;font-weight:700">SEVEN </span> simple steps</p>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-sm-6 col-xs-12" style="background-color:#fbfbfc">
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-sm-12 col-xs-12"style="padding-top:15%;padding-left:15%;align:center"><img src="picture.png" class="img-responsive">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 col-sm-12 col-sm-12 col-xs-12"style="align:center">
+              <button style="" class="create-resume-btn">Create Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row resume-creator-form" id="resume-page-form">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <div class="inner">
+                <ul class="tab-list">
+                    <li class="personal-button active tab-band">Personal Detail</li>
+                    <li class="resume-button un-active tab-band">Resume Objective</li>
+                    <li class="education-button un-active tab-band">Educational Qualification</li>
+                    <li class="technical-button un-active tab-band">Technical Skills</li>
+                    <li class="work-button un-active tab-band">Work Experience</li>
+                    <li class="achievement-button un-active tab-band">Achievements</li>
+                    <li class="template-button un-active tab-band">Template</li>
+                </ul>
+              </div>
+            </div>
+            <div class="inner">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <section id="personal-form">
+                <h3 class="heading">Enter your personal details</h3>
+                <hr>
+                <form class="form-horizontal" role="form" id="personal-detail">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="text">First Name:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" class="form-control" placeholder="Enter your name" id="fname" name="fname">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="text">Last Name:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" class="form-control" placeholder="Enter your name" id="lname" name="lname">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="email">Email:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="text">Phone No.</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="number" class="form-control" placeholder="Enter phone number" id="mobile" name="mobile">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="message">Address:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <textarea class="form-control" rows="2" id="address" placeholder="address" name="address"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="state">State:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter state" id="state" name="state">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="city">City:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="text" class="form-control" placeholder="enter city" id="city" name="city">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="">Website:</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                        <input type="url" class="form-control" placeholder="enter your personal website" id="website" name="website">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="col-sm-offset-4 col-sm-8 col-xs-offset-4 col-xs-8" style="margin-top:1%">
+                        <button type="submit" id="first-next-button" value="validate"> Save and Continue</button>
+                  </div>
+                </section><!--end of personal detail section-->
+                <section id="resume-form">
+                <h3 class="heading">Enter resume objective, should not be more than 200 words</h3>
+                <hr>
+                <form class="form-horizontal" role="form" id="resume-detail">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="objective">Objective :</label>
+                      <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                         <textarea class="form-control" rows="2" id="text-objective" placeholder="Enter Objective" name="objective"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                      <div class="col-sm-offset-2 col-sm-4 col-xs-4" style="margin-top:1%">
+                        <button id="first-previous-button" align="center">Previous</button>
+                      </div>
+                      <div class="col-sm-offset-2 col-sm-4 col-xs-8" style="margin-top:1%">
+                        <button id="second-next-button" align="center">save and continue</button>
+                      </div>
+                </section>
+                <section id="education-form">
+                  <h3 class="heading">Degree Information</h3>
+                  <hr>
+                <fieldset>
+                <legend class="heading">Secondary Details</legend>
+                <form class="form-horizontal" role="form" id="secondary-form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="degree">Degree</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" class="form-control" id="degreezero" name="degree[0]" list="degree" placeholder="select degree">
+                         <datalist id="degree">
+                          <option>X</option>
+                        </datalist>
+                      </div>
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="degree">Board</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter board details" id="boardzero" name="board[0]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="institute">Institute</label>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter institute name" id="institutezero" name="institute[0]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="marks">Marks</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="number" class="form-control" placeholder="enter-marks" id="markszero" name="marks[0]">
+                      </div>
+                      <label class="control-label col-sm-3 col-md-3 col-lg-3 col-xs-12" for="passing">Year of passing</label>
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                         <input type="number" class="form-control" placeholder="year-passing" id="yearzero" name="year[0]">
+                      </div>
+                    </div>
+                </form>
+                </fieldset>
+                 <fieldset>
+                <legend class="heading">Senior Secondary Details</legend>
+                <form class="form-horizontal" role="form" id="senior-secondary-form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="degree">Degree</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" id="degreeone" name="degree[1]" class="form-control" placeholder="select degree" list="degree1">
+                         <datalist id="degree1">
+                          <option>XII</option>
+                          <option>Diploma</option>
+                        </datalist>
+                      </div>
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="degree">Board</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter board details" id="boardone" name="board[1]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="institute">Institute</label>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter institute name" id="instituteone" name="institute[1]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="marks">Marks</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="number" class="form-control" placeholder="enter-marks" id="marksone" name="marks[1]">
+                      </div>
+                      <label class="control-label col-sm-3 col-md-3 col-lg-3 col-xs-12" for="passing">Year of passing</label>
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                         <input type="number" class="form-control" placeholder="year-passing" id="yearone" name="year[1]">
+                      </div>
+                    </div>
+                </form>
+                </fieldset>
+                <fieldset>
+                <legend class="heading">Graduation Details</legend>
+                <form class="form-horizontal" role="form" id="graduation-detail">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="degree">Degree</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" class="form-control" id="degreetwo" name="degree[2]" placeholder="enter degree" list="degree2">
+                         <datalist id="degree2">
+                          <option>B.E</option>
+                          <option>B.Tech</option>
+                          <option>BA</option>
+                          <option>BCA</option>
+                          <option>B.sc</option>
+                          <option>other</option>
+                        </datalist>
+                      </div>
+                       <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="">Branch</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter branch name" id="branchzero" name="branch[2]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="institute">Institute</label>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter institute name" id="institutetwo" name="institute[2]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="marks">Marks</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="number" class="form-control" placeholder="enter-marks" id="markstwo" name="marks[2]">
+                      </div>
+                      <label class="control-label col-sm-3 col-md-3 col-lg-3 col-xs-12" for="passing">Year of passing</label>
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                         <input type="number" class="form-control" placeholder="year-passing" id="yeartwo" name="year[2]">
+                      </div>
+                    </div>
+                  </form>
+                </fieldset>
+                <fieldset>
+                <legend class="heading">Post Graduation</legend>
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="degree">Degree</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <input type="text" class="form-control" id="degreethree" name="degree[3]" placeholder="select degree" list="degree3">
+                         <datalist id="degree3">
+                          <option>M.E</option>
+                          <option>M.Tech</option>
+                          <option>MA</option>
+                          <option>MBA</option>
+                          <option>M.sc</option>
+                          <option>MCA</option>
+                          <option>other</option>
+                        </datalist>
+                      </div>
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="">Branch</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter branch name" id="branchone">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="institute">Institute</label>
+                      <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                         <input type="text" class="form-control" placeholder="enter institute name" id="institutethree">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2 col-md-2 col-lg-2 col-xs-12" for="marks">Marks</label>
+                      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                         <input type="number" class="form-control" placeholder="enter-marks" id="marksthree">
+                      </div>
+                      <label class="control-label col-sm-3 col-md-3 col-lg-3 col-xs-12" for="passing">Year of passing</label>
+                      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                         <input type="number" class="form-control" placeholder="year-passing" id="yearthree">
+                      </div>
+                    </div>
+                  </form>
+                  </fieldset>
+                    
+                      <div class="col-sm-offset-2 col-sm-4 col-xs-4" style="margin-top:1%">
+                        <button id="second-previous-button" align="center">Previous</button>
+                      </div>
+                      <div class="col-sm-offset-2 col-sm-4 col-xs-8" style="margin-top:1%">
+                        <button  id="third-next-button" align="center">Save and Continue</button>
+                      </div>
+                </section><!--end of education -->
+                <section id="technical-form">
+                <h3 class="heading">Enter Technical Skills</h3>
+                <hr>
+                <form class="form-horizontal" role="form" id="technical-detail">
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter first skill" id="skillszero" name="skills[0]" list="languages">
+                          <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select1">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter second skill" id="skillsone" name="skills[1]" list="languages">
+                         <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select2">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter third skill" id="skillstwo" name="skills[2]" list="languages">
+                          <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select3">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter fourth skill" id="skillsthree" name="skills[3]" list="languages">
+                          <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select4">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter fifth skill" id="skillsfour" name="skills[4]" list="languages">
+                          <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select5">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter sixth skill" id="skillsfive" name="skills[5]" list="languages">
+                          <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select6">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <input type="text" class="form-control typeahead" placeholder="enter seventh skill" id="skillssix" name="skills[6]" list="languages">
+                          <datalist id="languages">
+                            <option value="HTML">
+                            <option value="CSS">
+                            <option value="JavaScript">
+                            <option value="Java">
+                            <option value="Ruby">
+                            <option value="PHP">
+                            <option value="Go">
+                            <option value="Erlang">
+                            <option value="Python">
+                            <option value="C">
+                            <option value="C#">
+                            <option value="C++">
+                            <option value="Jquery"></option>
+                            <option value="Bootstrap"></option>
+                        </datalist>
+                      </div>
+                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                         <select class="form-control" name="select6">
+                          <option>Select Level</option>
+                          <option>Beginner</option>
+                          <option>Intermediate</option>
+                          <option>Advance</option>
+                         </select>
+                      </div>
+                    </div>
+                  </form>
+                      <div class="col-sm-offset-2 col-sm-4 col-xs-4" style="margin-top:1%">
+                        <button class="third-previous-button" align="center">Previous</button>
+                      </div>
+                      <div class="col-sm-offset-2 col-sm-4 col-xs-8" style="margin-top:1%">
+                        <button type="submit" id="fourth-next-button" align="center">save and Continue</button>
+                      </div>
+                </section><!--end of skills-->
+                <section id="work-form">
+                  <h3 class="heading">Company Experience</h3>
+                  <hr>
+                  <form class="company-form-1" id="company-detail">
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Position</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                        <input type="text" class="form-control" id="cpositionzero" placeholder="enter company position" name="cposition[0]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Company Name</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                        <input type="text" class="form-control" id="cdetailszero" placeholder="enter company details" name="cdetails[0]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Start Date</label>
+                      <div class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-6">
+                        <input type="text" class="form-control" id="smonthzero" name="smonth[0]" id="monthlist" placeholder="enter month">
+                        <datalist id="monthlist">
+                          <option>Jan</option>
+                          <option>Feb</option>
+                          <option>Mar</option>
+                          <option>Apr</option>
+                          <option>May</option>
+                          <option>Jun</option>
+                          <option>July</option>
+                          <option>Aug</option>
+                          <option>Sep</option>
+                          <option>Oct</option>
+                          <option>Nov</option>
+                          <option>Dec</option>
+                         </datalist>
+                      </div>
+                      <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6">
+                        <input type="text" class="form-control" id="syearzero" name="syear[0]" placeholder="enter year" list="yearlist">
+                        <datalist id="yearlist">
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                          <option>2008</option>
+                          <option>2007</option>
+                          <option>2006</option>
+                          <option>2005</option>
+                         </datalist>
+                      </div>
+                    </div>
+                    <div class="from-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">End Date</label>
+                      <div class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-6">
+                        <input type="text" placeholder="enter month" id="emonthzero" list="monthlist" class="form-control" name="emonth[0]"> 
+                        <datalist id="emonthzero">
+                          <option>Jan</option>
+                          <option>Feb</option>
+                          <option>Mar</option>
+                          <option>Apr</option>
+                          <option>May</option>
+                          <option>Jun</option>
+                          <option>July</option>
+                          <option>Aug</option>
+                          <option>Sep</option>
+                          <option>Oct</option>
+                          <option>Nov</option>
+                          <option>Dec</option>
+                         </datalist>
+                      </div>
+                      <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6">
+                        <input type="text" id="eyearzero" name="eyear[0]" placeholder="enter year" list="yearlist" class="form-control">
+                        <datalist id="yearlist">
+                          <option>Select Month</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                          <option>2008</option>
+                          <option>2007</option>
+                          <option>2006</option>
+                          <option>2005</option>
+                         </datalist>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Responsibilities</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                         <input type="text" class="form-control" id="respzeroform1" name="resp[00]" style="margin-top:1%">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="control-label col-lg-offset-3 col-lg-9 col-sm-offset-9 col-sm-9 col-md-offset-9 col-md-9 col-xs-12">
+                         <input type="text" class="form-control" id="responeform1"  style="margin-top:1%">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="control-label col-lg-offset-3 col-lg-9 col-sm-offset-9 col-sm-9 col-md-offset-9 col-md-9 col-xs-12">
+                         <input type="text" class="form-control" id="resptwoform1"  style="margin-top:1%">
+                      </div>
+                    </div>
+                    
+                  </form>
+                  <form class="company-form-2">
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Position</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                        <input type="text" class="form-control" id="cpositionone" placeholder="enter company position">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Company Name</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                        <input type="text" class="form-control" id="cdetailsone" placeholder="enter company details">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Start Date</label>
+                      <div class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-6">
+                        <input type="text" class="form-control" id="smonthone" placeholder="enter month" list="monthlist">
+                        <datalist id="monthlist">
+                          <option>Month</option>
+                          <option>Jan</option>
+                          <option>Feb</option>
+                          <option>Mar</option>
+                          <option>Apr</option>
+                          <option>May</option>
+                          <option>Jun</option>
+                          <option>July</option>
+                          <option>Aug</option>
+                          <option>Sep</option>
+                          <option>Oct</option>
+                          <option>Nov</option>
+                          <option>Dec</option>
+                         </datalist>
+                      </div>
+                      <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6">
+                        <input type="text" class="form-control" id="syearone" placeholder="enter year" name="syearone" list="yearlist">
+                        <datalist id="yearlist">
+                          <option>Year</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                          <option>2008</option>
+                          <option>2007</option>
+                          <option>2006</option>
+                          <option>2005</option>
+                         </datalist>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">End Date</label>
+                      <div class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-6">
+                        <input type="text" class="form-control" id="emonthone" placeholder="enter month" id="monthlist">
+                        <datalist id="monthlist">
+                          <option>Month</option>
+                          <option>Jan</option>
+                          <option>Feb</option>
+                          <option>Mar</option>
+                          <option>Apr</option>
+                          <option>May</option>
+                          <option>Jun</option>
+                          <option>July</option>
+                          <option>Aug</option>
+                          <option>Sep</option>
+                          <option>Oct</option>
+                          <option>Nov</option>
+                          <option>Dec</option>
+                         </datalist>
+                      </div>
+                      <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6">
+                        <input type="text" class="form-control" id="eyearone" placeholder="select year" name="eyearone" list="yearlist">
+                        <datalist id="yearlist">
+                          <option>Year</option>
+                          <option>2016</option>
+                          <option>2015</option>
+                          <option>2014</option>
+                          <option>2013</option>
+                          <option>2012</option>
+                          <option>2011</option>
+                          <option>2010</option>
+                          <option>2009</option>
+                          <option>2008</option>
+                          <option>2007</option>
+                          <option>2006</option>
+                          <option>2005</option>
+                         </datalist>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Responsibilities</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                         <input type="text" class="form-control" id="respzeroform2"  style="margin-top:1%">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="control-label col-lg-offset-3 col-lg-9 col-sm-offset-9 col-sm-9 col-md-offset-9 col-md-9 col-xs-12">
+                         <input type="text" class="form-control" id="responeform2"  style="margin-top:1%">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="control-label col-lg-offset-3 col-lg-9 col-sm-offset-9 col-sm-9 col-md-offset-9 col-md-9 col-xs-12">
+                         <input type="text" class="form-control" id="resptwoform2"  style="margin-top:1%">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="add-btn-1 col-lg-offset-10 col-lg-2 col-md-offset-10 col-md-2 col-sm-offset-10 col-sm-2 col-xs-12">
+                      <button class="click-add-button-1">Add</button>
+                  </div>
+                  <h3 class="heading">Project Experience</h3>
+                  <hr>
+                  <form class="project-form-1" id="project-detail">
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Name of project</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                        <input type="text" class="form-control" id="pnamezero" placeholder="enter project name" name="pname[0]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Description</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                         <textarea class="form-control" rows="2" id="pdesczero" placeholder="description" name="pdesc[0]"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                  <form class="project-form-2" id="project-detail">
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Name of project</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                        <input type="text" class="form-control" id="pnameone" placeholder="enter project name" name="pname[1]">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12">Description</label>
+                      <div class="control-label col-lg-9 col-sm-9 col-md-9 col-xs-12">
+                         <textarea class="form-control" rows="2" id="pdescone" placeholder="description" name="pdesc[1]"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="add-project-btn-1 col-lg-offset-10 col-lg-2 col-md-offset-10 col-md-2 col-sm-offset-10 col-sm-2 col-xs-12">
+                      <button class="click-project-button-1">Add</button>
+                  </div>
+                  <div class="col-sm-offset-2 col-sm-4 col-xs-4" style="margin-top:1%">
+                        <button class="fourth-previous-button" align="center">Previous</button>
+                  </div>
+                  <div class="col-sm-offset-2 col-sm-4 col-xs-8" style="margin-top:1%">
+                        <button  id="fifth-next-button" align="center">Save and Continue</button>
+                  </div>
+                </section>
+                <section id="achievement-form">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><h4 class="heading">Enter minimum two important achievement</h4></div>
+                  <hr>
+                  <form id="achievement-detail">
+                    <div class="form-group">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">1</label>
+                      <div class="control-label col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achieve" class="form-control" name="achieve[0]">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">2</label>
+                      <div class="control-label col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achieveone" class="form-control" name="achieve[1]">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">3</label>
+                      <div class="control-lable col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achievetwo" class="form-control" name="achieve[2]">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">4</label>
+                      <div class="control-lable col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achievethree" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">5</label>
+                      <div class="control-lable col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achievefour" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">6</label>
+                      <div class="control-lable col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achievefive" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">7</label>
+                      <div class="control-lable col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achievesix" class="form-control">
+                      </div>
+                    </div>
+                    <div class="form-group" style="margin-top:2%">
+                      <label class="control-label col-sm-1 col-md-1 col-lg-1 col-xs-1" for="">8</label>
+                      <div class="control-lable col-sm-11 col-md-11 col-lg-11 col-xs-11">
+                        <input type="text" id="achieveseven" class="form-control">
+                      </div>
+                    </div>
+                  </form>
+                   <div class="col-sm-offset-2 col-sm-4 col-xs-4" style="margin-top:1%">
+                        <button class="fifth-previous-button" align="center">Previous</button>
+                  </div>
+                  <div class="col-sm-offset-2 col-sm-4 col-xs-8" style="margin-top:1%">
+                        <button  id="sixth-next-button" align="center">Save and Continue</button>
+                  </div>
+                </section>
+                <section id="template-form">
+                  <h3 class="heading">Choose a template</h3>
+                  <hr>
+                      <div class="row">
+                        <div class=" col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                        <img src="template2.jpg" class="img-responsive" data-toggle="modal" data-target="#template1" style="width:40%;height:40%">
+                        <div class="btn"><button class="template1-button">Template one</button></div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                        <img src="template2.jpg" class="img-responsive" data-toggle="modal" data-target="#template1" style="width:40%;height:40%">
+                        <div class="btn"><button class="template2-button">Template two</button></div>
+                        </div>
+                      </div>
+                  <div class="row">
+                  <div class="col-sm-offset-5 col-sm-7 col-xs-offset-4 col-xs-8" style="margin-top:1%">
+                        <button class="sixth-previous-button" align="center">Previous</button>
+                  </div>
+                </div>
+                </section>
+    </div>
+    </div>
+    </div><!--end of one div form-->
+    </div><!--end of container-->
+    <div class="row resume-template1-form">
+      <div class="resume-template1-form-inner">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 style="text-align:left" class="r-name" style="font-weight:600;font-size:1.75em">Harshita Singh</h1>
+              <p class="r-email" style="line-height:0.75"> </p>
+              <p class="r-mobile"  style="line-height:0.75"> </p>
+              <p class="r-website"  style="line-height:0.75"> </p>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Carrier Objective
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p class="r-objective" style="margin-top:1%"></p>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Work Experience
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+          <div class="row">
+          <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <h4 style="font-weight:500;font-size:1.30em;line-height:0.75" class="r-positionzero"></h4>
+          <h5 class="r-cnamezero"></h5>
+          <ul class="company-list-1">
+            <li class="r-respzerolistone"></li>
+            <li class="r-respzerolisttwo"></li>
+            <li class="r-respzerolistthree"></li>
+          </ul>
+         </div>
+        </div>
+        <div class="row r-company-row-2">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <h4 style="font-weight:500;font-size:1.30em" class="r-positionone"></h4>
+          <h5 class="r-cnameone"></h5>
+          <ul class="company-list-2">
+            <li class="r-responelistone"></li>
+            <li class="r-responelisttwo"></li>
+            <li class="r-responelistthree"></li>
+          </ul>
+         </div>
+        </div>
+        <h4 style="font-size:1.5em"><u>Project Experience</u></h4>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h4 class="r-project-name-zero"></h4>
+          <ul>
+            <li class="r-project-desc-zero"></li>
+          </ul>
+        </div>
+        </div>
+        <div class="row r-project-row-2">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h4 class="r-project-name-one"></h4>
+          <ul>
+            <li class="r-project-desc-one"></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Educational Qualification
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+              <th>Degree</th>
+              <th>Institute Name</th>
+              <th>Branch/Board</th>
+              <th>Marks</th>
+              <th>Passing Year</th>
+              </tr>
+            </thead>
+            <tbody>
+             <tr class="r-table-row1">
+              <td class="r-table-row1-one"></td>
+              <td class="r-table-row1-two"></td>
+              <td class="r-table-row1-three"></td>
+              <td class="r-table-row1-four"></td>
+              <td class="r-table-row1-five"></td>
+              </tr>
+              <tr class="r-table-row2">
+              <td class="r-table-row2-one"></td>
+              <td class="r-table-row2-two"></td>
+              <td class="r-table-row2-three"></td>
+              <td class="r-table-row3-four"></td>
+              <td class="r-table-row2-five"></td>
+              </tr>
+              <tr class="r-table-row3">
+              <td class="r-table-row3-one"></td>
+              <td class="r-table-row3-two"></td>
+              <td class="r-table-row3-three"></td>
+              <td class="r-table-row3-four"></td>
+              <td class="r-table-row3-five"></td>
+              </tr>
+              <tr class="r-table-row4">
+              <td class="r-table-row4-one"></td>
+              <td class="r-table-row4-two"></td>
+              <td class="r-table-row4-three"></td>
+              <td class="r-table-row4-four"></td>
+              <td class="r-table-row4-five"></td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Technical Skills
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+           <ul class="r-skill-list">
+            <li class="r-skill-one"></li>
+            <li class="r-skill-two"></li>
+            <li class="r-skill-three"></li>
+            <li class="r-skill-four"></li>
+            <li class="r-skill-five"></li>
+            <li class="r-skill-six"></li>
+            <li class="r-skill-seven"></li>
+          </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-box" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Achievements
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+         <ul class="r-achieve-list">
+          <li class="r-achieve-one"></li>
+          <li class="r-achieve-two"></li>
+          <li class="r-achieve-three"></li>
+          <li class="r-achieve-four"></li>
+          <li class="r-achieve-five"></li>
+          <li class="r-achieve-six"></li>
+          <li class="r-achieve-seven"></li>
+          <li class="r-achieve-eight"></li>
+          </ul>
+      </div>
+    </div>
+    </div> 
+    </div> <!-- end of template1-->
+  <div class="row resume-template2-form">
+    <div class="resume-template1-form-inner">
+      <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 style="text-align:left" class="r-name" style="font-weight:600;font-size:1.75em">Harshita Singh</h1>
+              <p class="r-email" style="line-height:0.75"> </p>
+              <p class="r-mobile"  style="line-height:0.75"> </p>
+              <p class="r-website"  style="line-height:0.75"> </p>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Carrier Objective
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <p class="r-objective" style="margin-top:1%"></p>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Work Experience
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+          <div class="row">
+          <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <h4 style="font-weight:500;font-size:1.30em" class="r-positionzero"></h4>
+          <h5 class="r-cnamezero"></h5>
+          <ul class="company-list-1">
+            <li class="r-respzerolistone"></li>
+            <li class="r-respzerolisttwo"></li>
+            <li class="r-respzerolistthree"></li>
+          </ul>
+         </div>
+        </div>
+        <div class="row r-company-row-2">
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+          <h4 style="font-weight:500;font-size:1.30em" class="r-positionone"></h4>
+          <h5 class="r-cnameone"></h5>
+          <ul class="company-list-2">
+            <li class="r-responelistone"></li>
+            <li class="r-responelisttwo"></li>
+            <li class="r-responelistthree"></li>
+          </ul>
+         </div>
+        </div>
+        <h4 style="font-size:1.5em"><u>Project Experience</u></h4>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h4 class="r-project-name-zero"></h4>
+          <ul>
+            <li class="r-project-desc-zero"></li>
+          </ul>
+        </div>
+        </div>
+        <div class="row r-project-row-2">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h4 class="r-project-name-one"></h4>
+          <ul>
+            <li class="r-project-desc-one"></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Educational Qualification
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="margin-top:1%">
+        <p class="r-table-row3-one"><u><b></b></u></p>
+        <p class="r-table-row3-two"></p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <p class="r-table-row3-five"></p>
+      </div>
+    </div> 
+    <div class="row r-table-row4">
+      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" style="margin-top:1%">
+        <p class="r-table-row4-one"><u><b></b></u></p>
+        <p class="r-table-row4-two"></p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+        <p class="r-table-row4-five"></p>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Technical Skills
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+           <ul class="r-skill-list">
+            <li class="r-skill-one">gcgfg</li>
+            <li class="r-skill-two">hvhjghj</li>
+            <li class="r-skill-three">fjhg</li>
+            <li class="r-skill-four">hghg</li>
+            <li class="r-skill-five">hghj</li>
+            <li class="r-skill-six">jhjkh</li>
+            <li class="r-skill-seven">hjghg</li>
+          </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mobile-box" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+        Achievements
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
+         <ul class="r-achieve-list">
+          <li class="r-achieve-one"></li>
+          <li class="r-achieve-two"></li>
+          <li class="r-achieve-three"></li>
+          <li class="r-achieve-four"></li>
+          <li class="r-achieve-five"></li>
+          <li class="r-achieve-six"></li>
+          <li class="r-achieve-seven"></li>
+          <li class="r-achieve-eight"></li>
+          </ul>
+      </div>
+    </div>
+    </div> 
+  </div> <!-- end of template2-->
+   
+</div><!--end of container fluid-->
+     <div class=" modal fade" id="template1" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title title-modal">Template 1</h4>
+                                </div>
+                                <div class="modal-body">
+                                 <img src="template2.jpg" class="img-responsive">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+    </div> 
+    <div class=" modal fade" id="template2" role="dialog">
+                            <div class="modal-dialog">
+                            
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title title-modal">Template 2asd </h4>
+                                </div>
+                                <div class="modal-body">
+                                 <img src="template2.jpg" class="img-responsive">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+    </div>   
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.1/bootstrap3-typeahead.js"></script>
+    <script src="resume.js"></script>
+    <script src="template.js"></script>
+</body>
+</html>
