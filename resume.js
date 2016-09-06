@@ -274,36 +274,29 @@ rules: {
     }
 
   });
-  form7.validate({
+  form6.validate({
     rules:{
-            "c-position[0]": {
+            "cposition[0]": {
               required:true,
             },
-            "cdetails[1]" :{
+            "cdetails[0]" :{
               required:true,
             },
-            "smonth[0]" :{
-              required:true
-            },
-            "syear[0]" :{
+            "resp[00]" :{
               required:true
             }
     },
     messages: {
-      "c-position[0]" : 
+      "cposition[0]" : 
       {
         required: "Field cannot be blank",
       },
-      "cdetails[1]" : 
+      "cdetails[0]" : 
       {
         required: "Field cannot be blank",
       },
-      "smonth[0]" : 
-      {
+      "resp[00]" :{
         required: "Field cannot be blank",
-      },
-      "syear[0]" :{
-        required: "Field cannot be blank"
       }
     }
 

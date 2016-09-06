@@ -15,6 +15,8 @@ $(".r-achieve-eight").hide();
 $(".r-project-row-2").hide();
 $(".r-respzerolisttwo").hide();
 $(".r-respzerolistthree").hide();
+$(".r-responelisttwo").hide();
+$(".r-responelistthree").hide();
 $(".template1-button").click(function(){
 		var fname=$("#fname").val();
 		var lname=$("#lname").val();
@@ -23,6 +25,7 @@ $(".template1-button").click(function(){
 		var email=$("#email").val();
 		var mobile=$("#mobile").val();
 		var website=$("#website").val();
+		$(".r-name").text(fname + " " + lname);
 		$(".r-email").text("Email :" + email);
 		$(".r-mobile").text("Phone :" + mobile);
 		$(".r-website").text("Website :" + website);
@@ -110,28 +113,49 @@ $(".template1-button").click(function(){
 		//end of -technical -skill-section
 		//start of work experience form
 			var cpositionzero=$("#cpositionzero").val();
+			var cpositionone=$("#cpositionone").val();
 			var cnamezero=$("#cdetailszero").val();
+			var cnameone=$("cdetailsone").val();
 			var smonthzero=$("#smonthzero").val();
+			var smonthone=$("#smonthone").val();
 			var syearzero=$("#syearzero").val();
+			var syearone=$("#syearone").val();
 			var emonthzero=$("#emonthzero").val();
+			var emonthone=$("#emonthone").val();
 			var eyearzero=$("#eyearzero").val();
+			var eyearone=$("#eyearone").val();
 			var respzeroform1=$("#respzeroform1").val();
 			var responeform1=$("#responeform1").val();
 			var resptwoform1=$("#resptwoform1").val();
-			$(".r-responelisttwo").text(responeform1);
-			$(".r-responelistthree").text(resptwoform1);
+			var respzeroform2=$("#respzeroform2").val();
+			var responeform2=$("#responeform2").val();
+			var resptwoform2=$("#resptwoform2").val();
+			$(".r-r-respzerolisttwo").text(responeform1);
+			$(".r-respzerolistthree").text(resptwoform1);
 			$(".r-positionzero").text(cpositionzero + " " + "(" + smonthzero + " " + 
 			syearzero + "-" + emonthzero + " "+eyearzero + ")");
+			$(".r-positionone").text(cpositionone + " " + "(" + smonthone + " " + 
+			syearone + "-" + emonthone + " "+eyearone + ")");
 			$(".r-cnamezero").text(cnamezero);
+			$(".r-cnamezone").text(cnameone);
 			$(".r-respzerolistone").text(respzeroform1);
 			if(responeform1!=='')
 			{
-				$(".r-responelisttwo").show();
+				$(".r-respzerolisttwo").show();
 			}
 			if(resptwoform1!=='')
 			{
+				$(".r-respzerolistthree").show();
+			}
+			if(responeform2!=='')
+			{
+				$(".r-responelisttwo").show();
+			}
+			if(resptwoform2!=='')
+			{
 				$(".r-responelistthree").show();
 			}
+
 			var projectnamezero=$("#pnamezero").val();
 			var projectdesczero=$("#pdesczero").val();
 			var projectnameone=$("#pnameone").val();
@@ -140,16 +164,11 @@ $(".template1-button").click(function(){
 			$(".r-project-desc-zero").text(projectdesczero);
 			$(".r-project-name-one").text(projectnameone);
 			$(".r-project-desc-one").text(projectdescone);
-			if(projectnamezero!=='')
-			{
-				$(".r-project-row-2").show();
-			}
-			if(projectdescone!=='')
+			if(projectnameone!=='')
 			{
 				$(".r-project-row-2").show();
 			}
 		//end of work experience
-				var achieveone=$("#achieve").val();
 				var achievetwo=$("#achieveone").val();
 				var achievethree=$("#achievetwo").val();
 				var achievefour=$("#achievethree").val();
@@ -157,7 +176,6 @@ $(".template1-button").click(function(){
 				var achievesix=$("#achievefive").val();
 				var achieveseven=$("#achievesix").val();
 				var achieveeight=$("#achieveseven").val();
-				$(".r-acheive-one").text(achieveone);
 				$(".r-achieve-two").text(achievetwo);
 				$(".r-achieve-three").text(achievethree);
 				$(".r-achieve-four").text(achievefour);
@@ -285,16 +303,12 @@ $(".template2-button").click(function(){
 			$(".r-project-desc-zero").text(projectdesczero);
 			$(".r-project-name-one").text(projectnameone);
 			$(".r-project-desc-one").text(projectdescone);
-			if(projectnamezero!=='')
-			{
-				$(".r-project-row-2").show();
-			}
-			if(projectdescone!=='')
+			if(projectnamezero!=='' || projectdescone!=='' )
 			{
 				$(".r-project-row-2").show();
 			}
 		//end of work experience
-				var achieveone=$("#achieve").val();
+				var achieveone=$("#achievezero").val();
 				var achievetwo=$("#achieveone").val();
 				var achievethree=$("#achievetwo").val();
 				var achievefour=$("#achievethree").val();
