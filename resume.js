@@ -12,6 +12,21 @@ var form5 =$("#technical-detail");
 var form6 =$("#company-detail");
 var form7 =$("#project-detail");
 var form8 =$("#achievement-detail");
+var syearzero=$("#syearzero").val();
+var smonthzero=$("#smonthzero").val();
+var eyearzero=$("#eyearzero").val();
+var emonthzero=$("#emonthzero").val();
+$.validator.addMethod("greaterThan",
+
+function (value, element, param) {
+  var $min = $(param);
+  if (this.settings.onfocusout) {
+    $min.off(".validate-greaterThan").on("blur.validate-greaterThan", function () {
+      $(element).valid();
+    });
+  }
+  return parseInt(value) > parseInt($min.val());
+}, "Must be greater than to startdate");
 form.validate({
 rules: {
                         "fname" : {
@@ -284,6 +299,15 @@ rules: {
             },
             "resp[00]" :{
               required:true
+            },
+            "syear[0]":
+            {
+              required:true,
+            },
+            "eyear[0]":
+            {
+              required:true,
+              greaterThan: '#syearzero',
             }
     },
     messages: {
@@ -297,6 +321,14 @@ rules: {
       },
       "resp[00]" :{
         required: "Field cannot be blank",
+      },
+      "syear[0]":
+      {
+        required:"cannot be blank,"
+      },
+      "eyear[0]":
+      {
+        required:"cannot be blank,"
       }
     }
 
@@ -433,17 +465,19 @@ rules: {
   	$("#achievement-form").hide();
   });
     $("#fifth-next-button").click(function(){
-    if(form6.valid() && form7.valid())
-    {
-    	$("#technical-form").hide();
-    	$("#resume-form").hide();
-    	$("#personal-form").hide();
-    	$("#education-form").hide();
-    	$("#work-form").hide();
-    	$("#achievement-form").show(100);
-    	$(".achievement-button").css({"background-color":"#42A5F5","color":"white"});
-  	  $(".work-button").css({"background-color":"#E0E0E0","color":"black"});
-    }
+      
+      if(form6.valid() && form7.valid())
+      {
+          	$("#technical-form").hide();
+          	$("#resume-form").hide();
+          	$("#personal-form").hide();
+          	$("#education-form").hide();
+          	$("#work-form").hide();
+          	$("#achievement-form").show(100);
+          	$(".achievement-button").css({"background-color":"#42A5F5","color":"white"});
+        	  $(".work-button").css({"background-color":"#E0E0E0","color":"black"});
+      }
+      
   });
   $(".fifth-previous-button").click(function(){
   	$("#technical-form").hide();

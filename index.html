@@ -537,7 +537,7 @@
                          </datalist>
                       </div>
                       <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6" style="margin-top:1%">
-                        <input type="text" class="form-control" id="syearzero" name="syear[0]" placeholder="enter year" list="yearlist">
+                        <input type="text" class="form-control" id="syearzero" name="syear[0]" list="yearlist" placeholder="enter year">
                         <datalist id="yearlist">
                           <option>2016</option>
                           <option>2015</option>
@@ -557,8 +557,8 @@
                     <div class="from-group" style="margin-top:1%">
                       <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12" style="margin-top:1%">End Date</label>
                       <div class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-6" style="margin-top:1%">
-                        <input type="text" placeholder="enter month" id="emonthzero" list="monthlist" class="form-control" name="emonth[0]"> 
-                        <datalist id="emonthzero">
+                        <input type="text" placeholder="enter month" id="emonthzero" list="monthlist1" class="form-control" name="emonth[0]"> 
+                        <datalist id="monthlist1">
                           <option>Jan</option>
                           <option>Feb</option>
                           <option>Mar</option>
@@ -574,7 +574,7 @@
                          </datalist>
                       </div>
                       <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6" style="margin-top:1%">
-                        <input type="text" id="eyearzero" name="eyear[0]" placeholder="enter year" list="yearlist" class="form-control">
+                        <input type="text" id="eyearzero" class="form-control" name="eyear[0]" list="yearlist" placeholder="enter year">
                         <datalist id="yearlist">
                           <option>Select Month</option>
                           <option>2016</option>
@@ -599,8 +599,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <div class="control-label col-lg-offset-3 col-lg-9 col-sm-offset-9 col-sm-9 col-md-offset-9 col-md-9 col-xs-12"   style="margin-top:1%">
-                         <input type="text" class="form-control" id="responeform1">
+                      <div class="control-label col-lg-offset-3 col-lg-9 col-sm-offset-9 col-sm-9 col-md-offset-9 col-md-9 col-xs-12"  style="margin-top:1%">
+                         <input type="text" class="form-control" id="respooneform1">
                       </div>
                     </div>
                     <div class="form-group">
@@ -666,7 +666,7 @@
                     <div class="form-group" style="margin-top:1%">
                       <label class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-12" style="margin-top:1%">End Date</label>
                       <div class="control-label col-lg-3 col-sm-3 col-md-3 col-xs-6"   style="margin-top:1%">
-                        <input type="text" class="form-control" id="emonthone" placeholder="enter month" id="monthlist">
+                        <input type="text" class="form-control" id="emonthone" placeholder="enter month" list="monthlist">
                         <datalist id="monthlist">
                           <option>Month</option>
                           <option>Jan</option>
@@ -683,7 +683,7 @@
                           <option>Dec</option>
                          </datalist>
                       </div>
-                      <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6"   style="margin-top:1%">
+                      <div class="control-label col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-xs-6"  style="margin-top:1%">
                         <input type="text" class="form-control" id="eyearone" placeholder="select year" name="eyearone" list="yearlist">
                         <datalist id="yearlist">
                           <option>Year</option>
@@ -839,6 +839,7 @@
     </div>
     </div><!--end of one div form-->
     </div><!--end of container-->
+    <!--start of first template-->
     <div class="row resume-template1-form">
       <div class="resume-template1-form-inner">
       <div class="row">
@@ -873,7 +874,7 @@
           <h5 class="r-cnamezero"></h5>
           <ul class="company-list-1">
             <li class="r-respzerolistone"></li>
-            <li class="r-respzerolisttwo"></li>
+            <li class="r-respozerolisttwo"></li>
             <li class="r-respzerolistthree"></li>
           </ul>
          </div>
@@ -1021,17 +1022,18 @@
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
         Work Experience
+        
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
           <div class="row">
           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
-          <h4 style="font-weight:500;font-size:1.30em" class="r-positionzero"></h4>
+          <h4 style="font-weight:500;font-size:1.30em;line-height:0.75" class="r-positionzero"></h4>
           <h5 class="r-cnamezero"></h5>
           <ul class="company-list-1">
             <li class="r-respzerolistone"></li>
-            <li class="r-respzerolisttwo"></li>
+            <li class="r-respozerolisttwo"></li>
             <li class="r-respzerolistthree"></li>
           </ul>
          </div>
@@ -1071,24 +1073,35 @@
         Educational Qualification
       </div>
     </div>
-    <div class="row">
-      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="margin-top:1%">
-        <p class="r-table-row3-one"><u><b></b></u></p>
-        <p class="r-table-row3-two"></p>
+    <div class="row r-table-row1">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%"> 
+          <h4 class="r-table-row1-one" style="line-height:0"><u></u></h4><br>
+          <p class="r-table-row1-two" style="line-height:0"><b></b></p><br>
+          <p class="r-table-row1-five" style="line-height:0"></p>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-        <p class="r-table-row3-five"></p>
+    </div>
+    <div class="row r-table-row2">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+              <h4 class="r-table-row2-one" style="line-height:0"><u></u></h4><br>
+               <p class="r-table-row2-two" style="line-height:0"><b></b></p><br>
+              <p class="r-table-row2-five" style="line-height:0"></p>
       </div>
-    </div> 
+    </div>
+    <div class="row r-table-row3">
+      <div class="col-lg-12 col-md-12 col-xs-12">
+              <h4 class="r-table-row3-one" style="line-height:0"></h4><u></u><br>
+               <p class="r-table-row3-two" style="line-height:0"><b></b></p><br>
+              <p class="r-table-row3-five" style="line-height:0"></p>
+      </div>
+    </div>
     <div class="row r-table-row4">
-      <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9" style="margin-top:1%">
-        <p class="r-table-row4-one"><u><b></b></u></p>
-        <p class="r-table-row4-two"></p>
+      <div class="col-lg-12 col-md-12 col-xs-12">
+              <h4 class="r-table-row4-one" style="line-height:0"><u></u></h4><br>
+              <p class="r-table-row4-two" style="line-height:0"><b></b></p><br>
+              <p class="r-table-row4-five" style="line-height:0"></p>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-        <p class="r-table-row4-five"></p>
-      </div>
-    </div> 
+    </div>
+    
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
         Technical Skills
@@ -1097,18 +1110,18 @@
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top:1%">
            <ul class="r-skill-list">
-            <li class="r-skill-one">gcgfg</li>
-            <li class="r-skill-two">hvhjghj</li>
-            <li class="r-skill-three">fjhg</li>
-            <li class="r-skill-four">hghg</li>
-            <li class="r-skill-five">hghj</li>
-            <li class="r-skill-six">jhjkh</li>
-            <li class="r-skill-seven">hjghg</li>
+            <li class="r-skill-one"></li>
+            <li class="r-skill-two"></li>
+            <li class="r-skill-three"></li>
+            <li class="r-skill-four"></li>
+            <li class="r-skill-five"></li>
+            <li class="r-skill-six"></li>
+            <li class="r-skill-seven"></li>
           </ul>
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 mobile-box" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mobile-box" style="font-weight:500;font-size:1.5em;background-color:#CFD8DC">
         Achievements
       </div>
     </div>
